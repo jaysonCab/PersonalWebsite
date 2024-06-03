@@ -28,13 +28,14 @@ html{
   width: 100%;
 
   display: grid;
-  grid-template-columns: 1fr 700px;
+  grid-template-columns: 1fr 700px 40px;
 }
 
 .footer{
   background-color:rgb(230, 230, 250);
   padding-bottom: 30px;
   padding-top: 30px;
+  
 }
 
 
@@ -58,7 +59,7 @@ html{
 
 .threeWayExpansion{
   display: grid;
-  grid-template-columns: 1fr 1400px 1fr;
+  grid-template-columns: 1fr 1600px 1fr;
 }
 
 .blankSpace{
@@ -90,16 +91,39 @@ html{
 .smallerText{
   padding-top: 20px;
   font-size: 70px;
+  
 }
 
-.gapTop{
-  padding-top:1000px;
+.boldTitle{
+  padding-top: 20px;
+  font-size: 50px;
+  font-family: typoRoundReg, sans-serif;  
+
 }
+
+.doubleSeparation {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+}
+
+.skillSummary {
+  padding-top: 20px;
+  font-family: typoRoundReg, sans-serif;
+  font-size: 30px;
+}
+
+.wording {
+  font-family: typoRoundReg, sans-serif;
+  font-size: 30px;
+}
+
+
 
 .cropGap{
   width:375px;
   height:375px;
   overflow: hidden;
+  
 
 
   display: grid;
@@ -107,7 +131,7 @@ html{
 }
 
 .margTop{
-  margin-top: 500px;
+  margin-top: 100px;
 }
 
 .blob{
@@ -200,8 +224,8 @@ p{
   width: 200px;
 }
 
-.resumeBTN{
-  width: 200px;
+.contactMeBTN{
+  width: 250px;
 }
 
 .aboutMeBTN{
@@ -221,8 +245,17 @@ p{
   color: rgb(107, 107, 224)
 }
 
+.segmentText2{ 
+  font-size: 50px;
+  font-family: typoRoundReg, sans-serif;
+  color: rgb(107, 107, 224);
+  padding-top:100px;
+  padding-bottom: 0px;
+}
+
 .p1Outer{
   margin-top:50px ;
+  margin-bottom: 200px;
   display: grid;
   grid-template-columns: 1fr 3fr;
 } 
@@ -230,7 +263,7 @@ p{
 .p1Outer2{
   display: grid;
   grid-template-columns: 1fr 3fr;
-  margin-top: 200px;
+  margin-top: 10px;
 } 
 
 
@@ -255,7 +288,7 @@ h1{
 
 .p1NameIcons{
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 3fr 1fr;
   height: 20px;
 }
 
@@ -266,6 +299,12 @@ h1{
   margin-left: auto;
 }
 
+.p5Icons{
+  height:10px;
+  display: grid;
+  grid-template-columns: 65px 65px 65px 65px 65px;
+  margin-left: auto;
+}
 
 .footerThreeWay{
   display:grid;
@@ -289,10 +328,46 @@ h1{
   text-align: center;
 }
 
-.codeLink{
+.codeLink1{
   display: grid;
   text-align: center;
-  grid-template-columns: 130px 1fr;
+  grid-template-columns: 200px 1fr;
+  margin-top: 80px;
+}
+
+.codeLink2{
+  display: grid;
+  text-align: center;
+  grid-template-columns: 200px 1fr;
+  margin-top: 60px;
+}
+
+.codeLink4{
+  display: grid;
+  text-align: center;
+  grid-template-columns: 200px 1fr;
+  margin-top: -40px;
+}
+
+.codeLink5{
+  display: grid;
+  text-align: center;
+  grid-template-columns: 200px 1fr;
+  margin-top: 60px;
+}
+
+.skillset {
+  display: flex;
+  margin-top: 200px;
+  flex-direction: row;
+  margin-bottom: 200px;
+}
+
+.leftIndent {
+  margin-top: 80px;
+  margin-left: 30px;
+  display: grid;
+  grid-template-rows: 100px 1fr;
 }
 
 .inline{
@@ -312,30 +387,93 @@ a{
 
 .icon{
   justify-content: center;
-  align-items: center;
 }
-
-
-
-
-
-
-
-
-
 
 
 .hidden {
 
-  margin-top: 100px;
+  margin-top: 0px;
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-100%);
   transition: all 1s;
+  border: black 4px solid;
+  
 }
 
 .show {
   opacity: 1;
   filter:blur(0);
   transform: translateX(0);
+}
+
+.backgroundColour{
+  color: rgb(255,242,227);
+}
+
+.contactInrto{
+  font-family: typoRoundReg, sans-serif;
+}
+
+
+
+
+/* Contact Me Portion */
+.contact-container{
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contact-left{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.contact-inputs {
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  border-radius: 50px;
+}
+
+.contact-left textarea{
+  height: 140px;
+  padding-top: 15px ;
+  border-radius: 20px;
+}
+
+.contact-inputs:focus {
+  border: 2px solid rgb(107,107,224);
+}
+
+.contact-inputs::placeholder{
+  color: rgb(107,107,224);
+}
+
+.contact-left button{
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color:white;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(270deg, rgb(107,107,224), rgb(230,230,250));
+  cursor: pointer;
+}
+
+.contact-left button img{
+  height: 15px;
+}
+
+.contact-right img{
+  width: 500px;
 }
