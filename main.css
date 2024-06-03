@@ -135,7 +135,7 @@ html{
 }
 
 .blob{
-  background-image: url("/images/JaysonProfile.png");
+  background-image: url("images/JaysonProfile.png");
   background-size: cover;
   background-position: top;
 
